@@ -115,7 +115,7 @@ For your convenience, we provide ready to use notebooks for some examples.
 ### Inference
 To run XFeat on an image, three lines of code is enough:
 ```python
-from modules.xfeat import XFeat
+from xfeat.xfeat import XFeat
 
 xfeat = XFeat()
 

@@ -26,7 +26,7 @@ class LighterGlue(nn.Module):
     "weights": None,
     }
 
-    def __init__(self, weights = os.path.abspath(os.path.dirname(__file__)) + '/../weights/xfeat-lighterglue.pt'):
+    def __init__(self, weights = os.path.abspath(os.path.dirname(__file__)) + '/../../weights/xfeat-lighterglue.pt'):
         super().__init__()
         LightGlue.default_conf = self.default_conf_xfeat
         self.net = LightGlue(None)

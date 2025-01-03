@@ -1,9 +1,9 @@
 import torch
 import torch.nn.functional as F
 
-from modules.dataset.megadepth import megadepth_warper
+from xfeat.dataset.megadepth import megadepth_warper
 
-from modules.training import utils
+from xfeat.training import utils
 
 from third_party.alike_wrapper import extract_alike_kpts
 

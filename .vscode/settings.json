@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ros2_ws/build/ros2bag_tools",
+        "/home/ros2_ws/install/ros2bag_tools/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/rosbag2_tools",
+        "/home/ros2_ws/install/rosbag2_tools/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/rclightning",
+        "/home/ros2_ws/install/rclightning/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/mr_interface",
+        "/home/ros2_ws/install/mr_interface/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/ros2_ws/build/ros2bag_tools",
+        "/home/ros2_ws/install/ros2bag_tools/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/rosbag2_tools",
+        "/home/ros2_ws/install/rosbag2_tools/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/rclightning",
+        "/home/ros2_ws/install/rclightning/lib/python3.10/site-packages",
+        "/home/ros2_ws/build/mr_interface",
+        "/home/ros2_ws/install/mr_interface/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

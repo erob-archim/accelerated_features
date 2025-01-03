@@ -53,13 +53,13 @@ from torch.utils.tensorboard import SummaryWriter
 
 import numpy as np
 
-from modules.model import *
-from modules.dataset.augmentation import *
-from modules.training.utils import *
-from modules.training.losses import *
+from xfeat.model import *
+from xfeat.dataset.augmentation import *
+from xfeat.training.utils import *
+from xfeat.training.losses import *
 
-from modules.dataset.megadepth.megadepth import MegaDepthDataset
-from modules.dataset.megadepth import megadepth_warper
+from xfeat.dataset.megadepth.megadepth import MegaDepthDataset
+from xfeat.dataset.megadepth import megadepth_warper
 from torch.utils.data import Dataset, DataLoader
 
 

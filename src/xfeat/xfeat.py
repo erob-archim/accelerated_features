@@ -11,8 +11,8 @@ import torch.nn.functional as F
 
 import tqdm
 
-from modules.model import *
-from modules.interpolator import InterpolateSparse2d
+from xfeat.model import *
+from xfeat.interpolator import InterpolateSparse2d
 
 class XFeat(nn.Module):
 	""" 
@@ -20,7 +20,7 @@ class XFeat(nn.Module):
 		It supports inference for both sparse and semi-dense feature extraction & matching.
 	"""
 
-	def __init__(self, weights = os.path.abspath(os.path.dirname(__file__)) + '/../weights/xfeat.pt', top_k = 4096, detection_threshold=0.05):
+	def __init__(self, weights = os.path.abspath(os.path.dirname(__file__)) + '/../../weights/xfeat.pt', top_k = 4096, detection_threshold=0.05):
 		super().__init__()
 		self.dev = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 		self.net = XFeatModel().to(self.dev).eval()
@@ -142,7 +142,7 @@ class XFeat(nn.Module):
 		if not self.kornia_available:
 			raise RuntimeError('We rely on kornia for LightGlue. Install with: pip install kornia')
 		elif self.lighterglue is None:
-			from modules.lighterglue import LighterGlue
+			from xfeat.lighterglue import LighterGlue
 			self.lighterglue = LighterGlue()
 
 		data = {
